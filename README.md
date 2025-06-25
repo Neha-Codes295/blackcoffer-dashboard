@@ -4,7 +4,7 @@ A full-stack MERN (MongoDB, Express, React, Node.js) application for visualizing
 
 ---
 
-## Features
+## 📊 Features
 
 - 📁 Backend: Express API with MongoDB + dynamic filtering
 - 📈 Frontend: React + Vite + TailwindCSS + Chart.js
@@ -17,7 +17,19 @@ A full-stack MERN (MongoDB, Express, React, Node.js) application for visualizing
 - 🧪 Unit test example included
 
 ---
-##  Tech Stack
+
+## 🚀 Live Demo
+
+- 🔗 **Frontend App**: [https://blackcoffer-dashboard-omega.vercel.app/](https://blackcoffer-dashboard-omega.vercel.app/)
+- 🔗 **Backend API**: [https://blackcoffer-dashboard-lkrq.onrender.com/api/data](https://blackcoffer-dashboard-lkrq.onrender.com/api/data)
+
+> ℹ️ Use the backend API above to test filters directly in Postman or browser. Example:
+https://blackcoffer-dashboard-lkrq.onrender.com/api/data?topic=oil&country=India
+
+
+---
+
+## 📦 Tech Stack
 
 | Layer        | Tech                          |
 |--------------|-------------------------------|
@@ -29,13 +41,14 @@ A full-stack MERN (MongoDB, Express, React, Node.js) application for visualizing
 
 ---
 
-##  Run Locally
+## 🧪 Run Locally
 
 ### Backend
 ```bash
 cd backend
 npm install
-# Add .env file: MONGO_URI=<your MongoDB URI>
+# .env should have:
+# MONGO_URI=mongodb://localhost:27017/blackcoffer
 npm start
 
 
@@ -45,16 +58,27 @@ npm install
 npm run dev
 
 
+Features Summary
+Multi-Chart Dashboard: Bar, Line, Pie
 
-API Endpoint
-GET /api/data?topic=oil&end_year=2022&country=India
+Filters: Dynamic dropdowns (topic, region, etc.)
 
+Reset Filters Button
 
+Analytics Summary Card
 
-Deployment
+Export Charts: PDF and CSV
+
+Mobile Friendly Design
+
+Connected to MongoDB Atlas via Render
+
+📤 Deployment
 Backend: Render
+
 Frontend: Vercel
 
-
-Author
-Neha
+👩‍💻 Author
+Neha Bhatia
+Software Engineer (Full-stack) Assignment
+Blackcoffer
