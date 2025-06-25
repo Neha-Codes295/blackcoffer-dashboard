@@ -12,7 +12,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     const query = new URLSearchParams(filters).toString();
-    axios.get(`http://localhost:5000/api/data?${query}`)
+    axios.get(`https://blackcoffer-dashboard-lkrq.onrender.com/api/data?${query}`)
       .then(res => {
         setData(res.data);
 
